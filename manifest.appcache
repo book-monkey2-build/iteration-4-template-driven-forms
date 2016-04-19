@@ -1,0 +1,101 @@
+CACHE MANIFEST
+# sw.bundle: ng-cli
+# sw.version: f41b278abf9546084beea3d367c1aee9d1a1b446
+# sw.file.hash: 4b64926f88d5ad8d84b081c65973757ba92123c9
+/app.js
+# sw.file.hash: ed75caf0a76290fb05e07e93aec20f5377380829
+/app.js.map
+# sw.file.hash: e0de32cb4e49d31c6b0b5744baf174dd4dd5d8cd
+/app/admin/admin.component.js
+# sw.file.hash: 6f9c4aac0f4c76a51c7d740cd3937dbf3e044b92
+/app/admin/admin.component.js.map
+# sw.file.hash: 1f50609c48d17d36b67cf5a79494086ff0d56349
+/app/book-details/book-details.component.js
+# sw.file.hash: 17bdbc747df01c8aa6f771c3f19b9529c187627a
+/app/book-details/book-details.component.js.map
+# sw.file.hash: edcbb197bccadc300f8e4080d6e8a0a45ce1a0bd
+/app/book-details/book-details.html
+# sw.file.hash: da67c256320fd3f9078bba545441f4ebe19aa4db
+/app/book-list-item/book-list-item.component.html
+# sw.file.hash: a27bb1cbced730b8e7015d71b012c5d473cca4fc
+/app/book-list-item/book-list-item.component.js
+# sw.file.hash: 9bec6e59b64b40f0bddf4addc5ded52956e7edd1
+/app/book-list-item/book-list-item.component.js.map
+# sw.file.hash: dc96480d0a3f930c9db32ee9079cfcba35cec0fe
+/app/book-list/book-list.component.html
+# sw.file.hash: b8c05c09714a6f2b1153bb743a82b89f4c74e539
+/app/book-list/book-list.component.js
+# sw.file.hash: 30810486b0051f8ed93f827a6730b5b2f1a5debb
+/app/book-list/book-list.component.js.map
+# sw.file.hash: 245397fcbd8799e0a49a9c7c10c36c18dc96e777
+/app/book-monkey.html
+# sw.file.hash: e177f3955b8a96106bf2ed195022f8a5633f61e9
+/app/book-monkey.js
+# sw.file.hash: 542e5e9f4a8a3f757580e666e146e86cd4910409
+/app/book-monkey.js.map
+# sw.file.hash: 3df41d3d8f45836863f351093c3cabd25e6ec968
+/app/books/books.component.js
+# sw.file.hash: 14a9f2faf03b749201e8084e0e9446600ba5d6ad
+/app/books/books.component.js.map
+# sw.file.hash: db1324531890642f2b2a13dfff01c5dbe7c6d2ce
+/app/form/form.component.html
+# sw.file.hash: 5e7f296f9fb0f890ca35b95798e1a2ada1ebb7a1
+/app/form/form.component.js
+# sw.file.hash: b5a489e2b9e926dc215772df45043995d4a4bd5c
+/app/form/form.component.js.map
+# sw.file.hash: 14825bc04696127a1d1c61adcfbbcac573d5159f
+/app/home/home.component.js
+# sw.file.hash: e43c4ec397c8e273c32a3896a813eebc57b8c3b3
+/app/home/home.component.js.map
+# sw.file.hash: 41889fcfaebbdd43a5eb7a9a73715323c4ea467e
+/app/services/books/book-store.service.js
+# sw.file.hash: 4ac84e312b67a87eb784d15bcf725b51b1d44be8
+/app/services/books/book-store.service.js.map
+# sw.file.hash: 87997081cd1516c9e674f5723d45785250891b53
+/domain/book.js
+# sw.file.hash: a0ea47736afe6a5c38c038d009d5f01772a8643c
+/domain/book.js.map
+# sw.file.hash: fb8f417d9e7565256d9ea3d3f8536cf69110678f
+/domain/thumbnail.js
+# sw.file.hash: aa598f799f737d739b4f579eeec4c8ca70bf7e26
+/domain/thumbnail.js.map
+# sw.file.hash: 84161b857f5c547e3699ddfbffc6d8d737542e01
+/favicon.ico
+# sw.file.hash: 40c57ab87467d946899c4ed8524fd4ec6f7a1b2a
+/index.html
+# sw.file.hash: 866e0d442ab28a3f6037bbbf3b98e84afc60d1a0
+/tsconfig.json
+# sw.file.hash: be771bd0a4170c04abff753212def2a2376a408e
+/vendor/angular2/bundles/angular2-polyfills.js
+# sw.file.hash: f37cd2b1aaaae47ad6abb1c295764f13c0feaf54
+/vendor/angular2/bundles/angular2.dev.js
+# sw.file.hash: e161d053cf096f7e43daa9aafc58026972429e6c
+/vendor/angular2/bundles/http.dev.js
+# sw.file.hash: 7f4f438fda4e4eade76812d3f6186ec78bbe612d
+/vendor/angular2/bundles/router.dev.js
+# sw.file.hash: e25faa64f759f35d881efc242e26c20440479897
+/vendor/angular2/bundles/upgrade.dev.js
+# sw.file.hash: 2adbdc3a7b6d85ac53b76b52234f28b16c88c7b2
+/vendor/es6-shim/es6-shim.js
+# sw.file.hash: 736fe8675af5630486329adf5efe12ec7be449b1
+/vendor/rxjs/bundles/Rx.js
+# sw.file.hash: 03ce1b92601ef75e5734eb765ec84b5c8fb25bde
+/vendor/semantic-ui-css/semantic.css
+# sw.file.hash: 3e63fc9b3de4580f1f3bec0631436f755b80f167
+/vendor/semantic-ui-css/themes/default/assets/fonts/icons.eot
+# sw.file.hash: cde9eb92c8a3ba23d648f76ea3931511f30813f4
+/vendor/semantic-ui-css/themes/default/assets/fonts/icons.otf
+# sw.file.hash: 26bb1c5ef100a1cd71923f1d5dc29fc797ef4639
+/vendor/semantic-ui-css/themes/default/assets/fonts/icons.svg
+# sw.file.hash: 9088143b19979779b2116cef38b661f72d982e19
+/vendor/semantic-ui-css/themes/default/assets/fonts/icons.ttf
+# sw.file.hash: 56ce13e71c2150d81bc972940584915181bd6081
+/vendor/semantic-ui-css/themes/default/assets/fonts/icons.woff
+# sw.file.hash: 1075231650f579955905bb2f6527148a8e2b4b16
+/vendor/semantic-ui-css/themes/default/assets/fonts/icons.woff2
+# sw.file.hash: 4a552ecb123ded5040ddda01d626103cc65db055
+/vendor/semantic-ui-css/themes/default/assets/images/flags.png
+# sw.file.hash: 064ab212cfd9e125474ae3bbb600c366b31e79cb
+/vendor/systemjs/dist/system-polyfills.js
+# sw.file.hash: 83128f4a4209eb7b16ad0bb729fda6939bc450fc
+/vendor/systemjs/dist/system.src.js

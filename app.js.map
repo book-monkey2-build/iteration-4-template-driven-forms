@@ -1,0 +1,1 @@
+{"version":3,"file":"app.js","sourceRoot":"","sources":["app.ts"],"names":[],"mappings":";AAAA,wBAAwB,2BAA2B,CAAC,CAAA;AACpD,4BAA4B,mBAAmB,CAAC,CAAA;AAEhD,mBAAS,CAAC,2BAAa,EAAE,EAAE,CAAC,CAAC","sourcesContent":["import {bootstrap} from 'angular2/platform/browser';\nimport {BookMonkeyApp} from './app/book-monkey';\n\nbootstrap(BookMonkeyApp, []);\n"]}
