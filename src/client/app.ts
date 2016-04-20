@@ -1,4 +1,7 @@
 import {bootstrap} from 'angular2/platform/browser';
-import {BookMonkeyApp} from './app/book-monkey';
+import {SamplesApp} from './app/samples';
+import {ROUTER_PROVIDERS} from 'angular2/router';
 
-bootstrap(BookMonkeyApp, []);
+bootstrap(SamplesApp, [
+  ROUTER_PROVIDERS
+]);
