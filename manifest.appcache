@@ -1,9 +1,9 @@
 CACHE MANIFEST
 # sw.bundle: ng-cli
-# sw.version: b692262efb990210b00328da9c5a1dc8e861625f
-# sw.file.hash: 4b64926f88d5ad8d84b081c65973757ba92123c9
+# sw.version: 92d227b4b34f9d0b0f67b83e455b996d40523d51
+# sw.file.hash: 9e27270431dd0e36213a0a0d1aafbd1faa409265
 /app.js
-# sw.file.hash: ed75caf0a76290fb05e07e93aec20f5377380829
+# sw.file.hash: a694ddf1b9e159301ce22afb9ec5f28504524dcb
 /app.js.map
 # sw.file.hash: e0de32cb4e49d31c6b0b5744baf174dd4dd5d8cd
 /app/admin/admin.component.js
