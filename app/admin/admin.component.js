@@ -10,14 +10,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('angular2/core');
 var router_1 = require('angular2/router');
-var form_component_1 = require('../form/form.component');
+var book_form_component_1 = require('../book-form/book-form.component');
 var AdminComponent = (function () {
     function AdminComponent() {
     }
     AdminComponent = __decorate([
         router_1.RouteConfig([
-            { path: '/add', name: 'Add', component: form_component_1.FormComponent, data: { mode: 'add' }, useAsDefault: true },
-            { path: '/update/:isbn', name: 'Update', component: form_component_1.FormComponent, data: { mode: 'update' } }
+            { path: 'books/', name: 'Add', component: book_form_component_1.BookFormComponent, data: { mode: 'add' }, useAsDefault: true },
+            { path: 'books/:isbn', name: 'Update', component: book_form_component_1.BookFormComponent, data: { mode: 'update' } }
         ]),
         core_1.Component({
             directives: [router_1.RouterOutlet],

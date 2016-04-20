@@ -12,13 +12,20 @@ var core_1 = require('angular2/core');
 var router_1 = require('angular2/router');
 var book_store_service_1 = require('../services/books/book-store.service');
 var BookDetailsComponent = (function () {
-    function BookDetailsComponent(params, bs) {
+    function BookDetailsComponent(params, bs, router) {
         this.params = params;
         this.bs = bs;
+        this.router = router;
         this.book = bs.getSingle(params.get('isbn'));
     }
     BookDetailsComponent.prototype.getRating = function (num) {
         return new Array(num);
+    };
+    BookDetailsComponent.prototype.deleteBook = function () {
+        if (confirm("Buch wirklich löschen?")) {
+            this.bs.delete(this.params.get('isbn'));
+            this.router.navigate(['../List']);
+        }
     };
     BookDetailsComponent = __decorate([
         core_1.Component({
@@ -28,7 +35,7 @@ var BookDetailsComponent = (function () {
             providers: [book_store_service_1.BookStoreService],
             directives: [router_1.ROUTER_DIRECTIVES]
         }), 
-        __metadata('design:paramtypes', [router_1.RouteParams, book_store_service_1.BookStoreService])
+        __metadata('design:paramtypes', [router_1.RouteParams, book_store_service_1.BookStoreService, router_1.Router])
     ], BookDetailsComponent);
     return BookDetailsComponent;
 }());
