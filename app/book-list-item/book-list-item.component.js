@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('angular2/core');
-var book_1 = require('../../domain/book');
+var book_1 = require('../domain/book');
 var BookListItem = (function () {
     function BookListItem() {
     }
