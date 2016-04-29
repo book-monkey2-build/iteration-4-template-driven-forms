@@ -1,6 +1,6 @@
 CACHE MANIFEST
 # sw.bundle: ng-cli
-# sw.version: 7d3d2e4a2de1c73fc7155ffb7e786325bbe5f876
+# sw.version: f58aab32b2af21648a692638c385886725b6209a
 # sw.file.hash: a859b942f1079cc34dc727265edefae5bbc52a9f
 /app.js
 # sw.file.hash: 44a12ccf8e84bb3c09b18e6d7244d7a808d3b0b5
@@ -13,21 +13,21 @@ CACHE MANIFEST
 /app/book-details/book-details.component.js
 # sw.file.hash: acb01371294e7593f51e14912342141993dd9aa2
 /app/book-details/book-details.component.js.map
-# sw.file.hash: d52d7f5d0f8c0f1f432dff762f87e33f53b24f58
+# sw.file.hash: 41581116666a19ea0b7029e9acf84ff6c532a897
 /app/book-details/book-details.html
-# sw.file.hash: db1324531890642f2b2a13dfff01c5dbe7c6d2ce
+# sw.file.hash: 626615135122cc13c8e239d8f6947a2259dd0428
 /app/book-form/book-form.component.html
 # sw.file.hash: 4a517c6fba71f10f5c5b907c9b15cd225b4f976c
 /app/book-form/book-form.component.js
 # sw.file.hash: 887d2419c20835dd5b8782d1c0b5b90a7a9c368d
 /app/book-form/book-form.component.js.map
-# sw.file.hash: da67c256320fd3f9078bba545441f4ebe19aa4db
+# sw.file.hash: fad3f0b406dbcfa9ba793cc4c5c90e8986f9df61
 /app/book-list-item/book-list-item.component.html
 # sw.file.hash: 76f59dd563c942db5811f5c8e7e3914f6f92f255
 /app/book-list-item/book-list-item.component.js
 # sw.file.hash: 59c7de8dddc754a60573b81a3a1c08aea3dfb844
 /app/book-list-item/book-list-item.component.js.map
-# sw.file.hash: dc96480d0a3f930c9db32ee9079cfcba35cec0fe
+# sw.file.hash: 0895ad2730810474b393840f80bf836df15d18ca
 /app/book-list/book-list.component.html
 # sw.file.hash: 830c7d8a46d6194f1f6237ee6aaf5824465d4e98
 /app/book-list/book-list.component.js
@@ -67,19 +67,19 @@ CACHE MANIFEST
 /index.html
 # sw.file.hash: e5e036b749a151842a579c1f964e7e57e9abd09d
 /tsconfig.json
-# sw.file.hash: be771bd0a4170c04abff753212def2a2376a408e
+# sw.file.hash: 746890c18b33ee141e8ee6d0a6fc54c472068e43
 /vendor/angular2/bundles/angular2-polyfills.js
-# sw.file.hash: f37cd2b1aaaae47ad6abb1c295764f13c0feaf54
+# sw.file.hash: dd155290f830ef52ef03dabc9b004c4b2a710e10
 /vendor/angular2/bundles/angular2.dev.js
-# sw.file.hash: e161d053cf096f7e43daa9aafc58026972429e6c
+# sw.file.hash: 559c0c6bbad394061c0e38c840ed5fcbf9576586
 /vendor/angular2/bundles/http.dev.js
-# sw.file.hash: 7f4f438fda4e4eade76812d3f6186ec78bbe612d
+# sw.file.hash: 9aa4f4804ec5ad96e653d65ccf9f5103305f2089
 /vendor/angular2/bundles/router.dev.js
-# sw.file.hash: e25faa64f759f35d881efc242e26c20440479897
+# sw.file.hash: a9e6ea0af015940874abe43a535710db220cce86
 /vendor/angular2/bundles/upgrade.dev.js
 # sw.file.hash: 2adbdc3a7b6d85ac53b76b52234f28b16c88c7b2
 /vendor/es6-shim/es6-shim.js
-# sw.file.hash: 736fe8675af5630486329adf5efe12ec7be449b1
+# sw.file.hash: 8fef432513a0468a823e74e7265cd70e6f2e18e2
 /vendor/rxjs/bundles/Rx.js
 # sw.file.hash: 03ce1b92601ef75e5734eb765ec84b5c8fb25bde
 /vendor/semantic-ui-css/semantic.css
