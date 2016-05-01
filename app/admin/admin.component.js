@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router', '../book-form/book-form.component'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/router', '../book-form/index'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/router', '../book-form/book-form.com
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, book_form_component_1;
+    var core_1, router_1, index_1;
     var AdminComponent;
     return {
         setters:[
@@ -20,8 +20,8 @@ System.register(['angular2/core', 'angular2/router', '../book-form/book-form.com
             function (router_1_1) {
                 router_1 = router_1_1;
             },
-            function (book_form_component_1_1) {
-                book_form_component_1 = book_form_component_1_1;
+            function (index_1_1) {
+                index_1 = index_1_1;
             }],
         execute: function() {
             AdminComponent = (function () {
@@ -29,8 +29,8 @@ System.register(['angular2/core', 'angular2/router', '../book-form/book-form.com
                 }
                 AdminComponent = __decorate([
                     router_1.RouteConfig([
-                        { path: 'books/', name: 'Add', component: book_form_component_1.BookFormComponent, data: { mode: 'add' }, useAsDefault: true },
-                        { path: 'books/:isbn', name: 'Update', component: book_form_component_1.BookFormComponent, data: { mode: 'update' } }
+                        { path: 'books/', name: 'Add', component: index_1.BookFormComponent, data: { mode: 'add' }, useAsDefault: true },
+                        { path: 'books/:isbn', name: 'Update', component: index_1.BookFormComponent, data: { mode: 'update' } }
                     ]),
                     core_1.Component({
                         directives: [router_1.RouterOutlet],

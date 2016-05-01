@@ -11,7 +11,7 @@ System.register(['angular2/core', '../domain/book'], function(exports_1, context
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1, book_1;
-    var BookListItem;
+    var BookListItemComponent;
     return {
         setters:[
             function (core_1_1) {
@@ -21,24 +21,24 @@ System.register(['angular2/core', '../domain/book'], function(exports_1, context
                 book_1 = book_1_1;
             }],
         execute: function() {
-            BookListItem = (function () {
-                function BookListItem() {
+            BookListItemComponent = (function () {
+                function BookListItemComponent() {
                 }
                 __decorate([
                     core_1.Input(), 
                     __metadata('design:type', book_1.Book)
-                ], BookListItem.prototype, "book", void 0);
-                BookListItem = __decorate([
+                ], BookListItemComponent.prototype, "book", void 0);
+                BookListItemComponent = __decorate([
                     core_1.Component({
                         selector: '.book-list-item',
                         moduleId: __moduleName,
                         templateUrl: 'book-list-item.component.html'
                     }), 
                     __metadata('design:paramtypes', [])
-                ], BookListItem);
-                return BookListItem;
+                ], BookListItemComponent);
+                return BookListItemComponent;
             }());
-            exports_1("BookListItem", BookListItem);
+            exports_1("BookListItemComponent", BookListItemComponent);
         }
     }
 });

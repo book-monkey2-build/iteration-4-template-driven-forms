@@ -1,48 +1,64 @@
 CACHE MANIFEST
 # sw.bundle: ng-cli
-# sw.version: cf265996e2569cabe119b1417d163cace6a12364
+# sw.version: 425018bb221461ca1a25798e7a5da42739eb4f75
 # sw.file.hash: a859b942f1079cc34dc727265edefae5bbc52a9f
 /app.js
 # sw.file.hash: 44a12ccf8e84bb3c09b18e6d7244d7a808d3b0b5
 /app.js.map
-# sw.file.hash: 7b38fabf08c968c2ea60183596c53fbb42107c73
+# sw.file.hash: 6f7f487fca72d4face6de0db0108f5003a1bd33a
 /app/admin/admin.component.js
-# sw.file.hash: f0d266739610d6779d1b196440783bf4c16e2a18
+# sw.file.hash: 3f59355a057da63d162a8ef3c29bb293eb4dacc8
 /app/admin/admin.component.js.map
-# sw.file.hash: 9a40b17e449a41a42cbe1bf330e8eecdc4e8c02d
-/app/book-details/book-details.component.js
-# sw.file.hash: acb01371294e7593f51e14912342141993dd9aa2
-/app/book-details/book-details.component.js.map
+# sw.file.hash: 4acdf6f6b283d85e895d8cb819e98a2a7e6644c8
+/app/admin/index.js
+# sw.file.hash: fd0ab1521a1ae7ee8f13a9e78b93cf0a13f20d24
+/app/admin/index.js.map
 # sw.file.hash: 41581116666a19ea0b7029e9acf84ff6c532a897
-/app/book-details/book-details.html
+/app/book-details/book-details.component.html
+# sw.file.hash: a802d864bd14237cfac35b1f66b15ada1707ff79
+/app/book-details/book-details.component.js
+# sw.file.hash: ac5dc4f4bcbcba7dd19ad26037922fa09d567534
+/app/book-details/book-details.component.js.map
 # sw.file.hash: 626615135122cc13c8e239d8f6947a2259dd0428
 /app/book-form/book-form.component.html
 # sw.file.hash: 4a517c6fba71f10f5c5b907c9b15cd225b4f976c
 /app/book-form/book-form.component.js
 # sw.file.hash: 887d2419c20835dd5b8782d1c0b5b90a7a9c368d
 /app/book-form/book-form.component.js.map
+# sw.file.hash: c03f64f9a8faa28403b1a7ea16a48553185bcf94
+/app/book-form/index.js
+# sw.file.hash: c41cfb487347d437c0e2c222a2ad60c0d63b8cf1
+/app/book-form/index.js.map
 # sw.file.hash: fad3f0b406dbcfa9ba793cc4c5c90e8986f9df61
 /app/book-list-item/book-list-item.component.html
-# sw.file.hash: 76f59dd563c942db5811f5c8e7e3914f6f92f255
+# sw.file.hash: a228579e01520683991a854ad6fefca0d95d99be
 /app/book-list-item/book-list-item.component.js
-# sw.file.hash: 59c7de8dddc754a60573b81a3a1c08aea3dfb844
+# sw.file.hash: 41f4fcdd56dc242715938c0d09594860bfa2f64b
 /app/book-list-item/book-list-item.component.js.map
+# sw.file.hash: 50ca41e3779a769d186f9ba2298fa19e49654523
+/app/book-list-item/index.js
+# sw.file.hash: f4e75a1493b77438fa503cff11a696310ff0cbfb
+/app/book-list-item/index.js.map
 # sw.file.hash: 0895ad2730810474b393840f80bf836df15d18ca
 /app/book-list/book-list.component.html
-# sw.file.hash: 830c7d8a46d6194f1f6237ee6aaf5824465d4e98
+# sw.file.hash: 6afe28308a0d9cc1a451862aa3e0650ac5c66946
 /app/book-list/book-list.component.js
-# sw.file.hash: ca6ea53d3febfa2a6d16ecd9f65c9885bf943f8e
+# sw.file.hash: c3fc34663b5d9ff582cd45e8ab3316d338e93e70
 /app/book-list/book-list.component.js.map
 # sw.file.hash: 245397fcbd8799e0a49a9c7c10c36c18dc96e777
 /app/book-monkey.html
-# sw.file.hash: 7253f7580b4e52cbfc1d919e54af90fbac4035d4
+# sw.file.hash: 4f979d1f4ee96789f42ccf688c207eb28a8a89e6
 /app/book-monkey.js
-# sw.file.hash: 68ab72dab4e9ca8e3cabd15a76991455e481b8b0
+# sw.file.hash: 07c358593d014646d5565f386617e2ae9868eadd
 /app/book-monkey.js.map
 # sw.file.hash: 16ec94bb9b6445f1cd3b75148bbf8c4cd2cc7203
 /app/books/books.component.js
 # sw.file.hash: 17a25e44a6760aee18cf5b2b0340afd2264ba2b1
 /app/books/books.component.js.map
+# sw.file.hash: 7221224e5af3f35eb77dca44e7a83ad09685941d
+/app/books/index.js
+# sw.file.hash: e168a4d1e85f5da16647b6fa2d7199b3bcf13f2d
+/app/books/index.js.map
 # sw.file.hash: 0221815b10d7b7d027e812b59784c6f8f0e079bf
 /app/domain/book.js
 # sw.file.hash: 0b3d0cd9facd3f76b4e910d968915497f4ea1434
@@ -55,6 +71,10 @@ CACHE MANIFEST
 /app/home/home.component.js
 # sw.file.hash: 7e695f0381efe337770a72d19955075226c422ad
 /app/home/home.component.js.map
+# sw.file.hash: 6bd583ee0c29eac42470427680cca5d0771b6a62
+/app/home/index.js
+# sw.file.hash: 2f2fff9376e5057634783dac4213ffa0c589c7c2
+/app/home/index.js.map
 # sw.file.hash: 6a94f7320fa1c681ebb43e7523cd1aadea7f0922
 /app/services/books/book-store.service.js
 # sw.file.hash: 50c5a4c3bcd263f62a693146b5a5e315aac0307a
