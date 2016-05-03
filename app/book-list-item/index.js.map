@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["index.ts"],"names":[],"mappings":"","sourcesContent":["export {BookListItemComponent} from './book-list-item.component';\n"]}
+{"version":3,"file":"index.js","sourceRoot":"","sources":["index.ts"],"names":[],"mappings":";AAAA,yCAAoC,4BAA4B,CAAC;AAAzD,iFAAyD","sourcesContent":["export {BookListItemComponent} from './book-list-item.component';\n"]}

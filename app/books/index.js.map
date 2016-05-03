@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["index.ts"],"names":[],"mappings":"","sourcesContent":["export {BooksComponent} from './books.component';\n"]}
+{"version":3,"file":"index.js","sourceRoot":"","sources":["index.ts"],"names":[],"mappings":";AAAA,gCAA6B,mBAAmB,CAAC;AAAzC,0DAAyC","sourcesContent":["export {BooksComponent} from './books.component';\n"]}
