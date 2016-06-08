@@ -8,8 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('angular2/core');
-var router_1 = require('angular2/router');
+var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
 var index_1 = require('../book-list-item/index');
 var book_store_service_1 = require('../services/books/book-store.service');
 var BookListComponent = (function () {
@@ -20,7 +20,7 @@ var BookListComponent = (function () {
     BookListComponent = __decorate([
         core_1.Component({
             selector: 'book-list',
-            directives: [index_1.BookListItemComponent, router_1.RouterLink],
+            directives: [index_1.BookListItemComponent, router_1.ROUTER_DIRECTIVES],
             moduleId: module.id,
             templateUrl: 'book-list.component.html',
             providers: [book_store_service_1.BookStoreService]

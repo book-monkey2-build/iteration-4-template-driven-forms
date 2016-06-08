@@ -8,20 +8,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('angular2/core');
-var router_1 = require('angular2/router');
+var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
 var book_list_component_1 = require('../book-list/book-list.component');
 var book_details_component_1 = require('../book-details/book-details.component');
 var BooksComponent = (function () {
     function BooksComponent() {
     }
     BooksComponent = __decorate([
-        router_1.RouteConfig([
-            { path: '/list', name: 'List', component: book_list_component_1.BookListComponent, useAsDefault: true },
-            { path: '/:isbn', name: 'Details', component: book_details_component_1.BookDetailsComponent }
+        router_1.Routes([
+            { path: '/', component: book_list_component_1.BookListComponent },
+            { path: '/:isbn', component: book_details_component_1.BookDetailsComponent }
         ]),
         core_1.Component({
-            directives: [router_1.RouterOutlet],
+            directives: [router_1.ROUTER_DIRECTIVES],
             template: '<router-outlet></router-outlet>'
         }), 
         __metadata('design:paramtypes', [])

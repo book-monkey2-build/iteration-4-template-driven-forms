@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["index.ts"],"names":[],"mappings":";AAAA,oCAAgC,uBAAuB,CAAC;AAAhD,oEAAgD","sourcesContent":["export {BookFormComponent} from './book-form.component';\n"]}
+{"version":3,"file":"index.js","sourceRoot":"","sources":["index.ts"],"names":[],"mappings":";AAAA,oCAAiC,uBAAuB,CAAC;AAAjD,oEAAiD","sourcesContent":["export {BookFormComponent } from './book-form.component';\n"]}

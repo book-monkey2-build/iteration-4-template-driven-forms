@@ -8,23 +8,26 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('angular2/core');
-var router_1 = require('angular2/router');
+var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
+var router_2 = require('@angular/router');
 var book_store_service_1 = require('../services/books/book-store.service');
 var BookDetailsComponent = (function () {
-    function BookDetailsComponent(params, bs, router) {
-        this.params = params;
+    function BookDetailsComponent(bs, router) {
         this.bs = bs;
         this.router = router;
-        this.book = bs.getSingle(params.get('isbn'));
     }
+    BookDetailsComponent.prototype.routerOnActivate = function (seg) {
+        this.curr = seg;
+        this.book = this.bs.getSingle(this.curr.getParam('isbn'));
+    };
     BookDetailsComponent.prototype.getRating = function (num) {
         return new Array(num);
     };
     BookDetailsComponent.prototype.deleteBook = function () {
         if (confirm("Buch wirklich löschen?")) {
-            this.bs.delete(this.params.get('isbn'));
-            this.router.navigate(['../List']);
+            this.bs.delete(this.book.isbn);
+            this.router.navigate(['../'], this.curr);
         }
     };
     BookDetailsComponent = __decorate([
@@ -35,7 +38,7 @@ var BookDetailsComponent = (function () {
             providers: [book_store_service_1.BookStoreService],
             directives: [router_1.ROUTER_DIRECTIVES]
         }), 
-        __metadata('design:paramtypes', [router_1.RouteParams, book_store_service_1.BookStoreService, router_1.Router])
+        __metadata('design:paramtypes', [book_store_service_1.BookStoreService, router_2.Router])
     ], BookDetailsComponent);
     return BookDetailsComponent;
 }());

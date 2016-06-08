@@ -8,28 +8,29 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('angular2/core');
-var router_1 = require('angular2/router');
-var common_1 = require('angular2/common');
+var core_1 = require('@angular/core');
+var common_1 = require('@angular/common');
+var book_1 = require('../domain/book');
 var book_store_service_1 = require('../services/books/book-store.service');
 var BookFormComponent = (function () {
-    function BookFormComponent(fb, routeData, routeParams, bs) {
-        var _this = this;
+    function BookFormComponent(fb, bs) {
         this.fb = fb;
-        this.routeData = routeData;
-        this.routeParams = routeParams;
         this.bs = bs;
-        var book = {
-            title: '',
-            subtitle: '',
-            isbn: '',
-            description: '',
-            authors: [''],
-            thumbnails: [{ url: '', title: '' }],
-            published: new Date()
-        };
-        if (routeData.get('mode') === 'update')
-            book = bs.getSingle(routeParams.get('isbn'));
+        this.isUpdatingBook = false;
+        this.initBook();
+    }
+    BookFormComponent.prototype.routerOnActivate = function (curr) {
+        var isbn = curr.getParam('isbn');
+        if (isbn) {
+            this.isUpdatingBook = true;
+            var book = this.bs.getSingle(isbn);
+            this.initBook(book);
+        }
+    };
+    BookFormComponent.prototype.initBook = function (book) {
+        var _this = this;
+        if (!book)
+            book = new book_1.Book('', '', [''], new Date(), '', 0, [{ url: '', title: '' }], '');
         this.myForm = this.fb.group({
             title: [book.title],
             subtitle: [book.subtitle],
@@ -45,7 +46,7 @@ var BookFormComponent = (function () {
         // this allows us to manipulate the form at runtime
         this.authorsControlArray = this.myForm.controls['authors'];
         this.thumbnailsControlArray = this.myForm.controls['thumbnails'];
-    }
+    };
     BookFormComponent.prototype.addAuthorControl = function () {
         this.authorsControlArray.push(this.fb.control(''));
     };
@@ -53,7 +54,9 @@ var BookFormComponent = (function () {
         this.thumbnailsControlArray.push(this.fb.group({ url: [''], title: [''] }));
     };
     BookFormComponent.prototype.submitForm = function (formData) {
-        this.routeData.get('mode') === 'update' ? this.bs.update(formData) : this.bs.create(formData);
+        this.isUpdatingBook
+            ? this.bs.update(formData.value)
+            : this.bs.create(formData.value);
     };
     BookFormComponent = __decorate([
         core_1.Component({
@@ -62,7 +65,7 @@ var BookFormComponent = (function () {
             templateUrl: 'book-form.component.html',
             providers: [book_store_service_1.BookStoreService]
         }), 
-        __metadata('design:paramtypes', [common_1.FormBuilder, router_1.RouteData, router_1.RouteParams, book_store_service_1.BookStoreService])
+        __metadata('design:paramtypes', [common_1.FormBuilder, book_store_service_1.BookStoreService])
     ], BookFormComponent);
     return BookFormComponent;
 }());
