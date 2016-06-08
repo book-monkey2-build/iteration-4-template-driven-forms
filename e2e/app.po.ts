@@ -4,6 +4,6 @@ export class BookMonkeyPage {
   }
 
   getParagraphText() {
-    return element(by.css('book-monkey-app p')).getText();
+    return element(by.css('book-monkey-app h1')).getText();
   }
 }

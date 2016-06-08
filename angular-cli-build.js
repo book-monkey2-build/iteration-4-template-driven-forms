@@ -3,11 +3,17 @@
 var Angular2App = require('angular-cli/lib/broccoli/angular2-app');
 
 module.exports = function(defaults) {
-  var app = new Angular2App(defaults, {
+  return new Angular2App(defaults, {
     vendorNpmFiles: [
-      'semantic-ui-css/semantic.css',
-      'semantic-ui-css/themes/**/*'      
+      'systemjs/dist/system-polyfills.js',
+      'systemjs/dist/system.src.js',
+      'zone.js/dist/**/*.+(js|js.map)',
+      'es6-shim/es6-shim.js',
+      'reflect-metadata/**/*.+(js|js.map)',
+      'rxjs/**/*.+(js|js.map)',
+      '@angular/**/*.+(js|js.map)',
+      'semantic-ui-css/semantic.min.css',
+      'semantic-ui-css/themes/**/*'
     ]
   });
-  return app.toTree();
 };
