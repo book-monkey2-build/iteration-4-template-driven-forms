@@ -1,6 +1,6 @@
-import { Component, Input } from '@angular/core';
-import { OnActivate, RouteSegment } from '@angular/router';
-import { ControlGroup, ControlArray, FormBuilder } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { FormBuilder, FormGroup, FormArray, REACTIVE_FORM_DIRECTIVES } from '@angular/forms';
 import { Book } from '../domain/book'
 import { BookStoreService } from '../services/books/book-store.service'
 
@@ -8,27 +8,34 @@ import { BookStoreService } from '../services/books/book-store.service'
   selector: 'book-form',
   moduleId: module.id,
   templateUrl: 'book-form.component.html',
-  providers: [BookStoreService]
+  providers: [BookStoreService],
+  directives: [REACTIVE_FORM_DIRECTIVES]
 })
-export class BookFormComponent implements OnActivate{
-  myForm: ControlGroup;
-  authorsControlArray: ControlArray;
-  thumbnailsControlArray: ControlArray;
+export class BookFormComponent implements OnInit {
+  myForm: FormGroup;
+  authorsControlArray: FormArray;
+  thumbnailsControlArray: FormArray;
   isUpdatingBook: boolean;
 
-  constructor(private fb: FormBuilder, private bs: BookStoreService) {
+  constructor(
+    private fb: FormBuilder, 
+    private bs: BookStoreService,
+    private route: ActivatedRoute
+  ) {
     this.isUpdatingBook = false;
     this.initBook();
   }
 
-  routerOnActivate(curr: RouteSegment):void {
-    var isbn = curr.getParam('isbn');
+  ngOnInit():void {
+    this.route.params.subscribe(params => {
+      var isbn = params['isbn'];
     
-    if(isbn) {
-      this.isUpdatingBook = true;
-      let book = this.bs.getSingle(isbn);
-      this.initBook(book)
-    }
+      if(isbn) {
+        this.isUpdatingBook = true;
+        let book = this.bs.getSingle(isbn);
+        this.initBook(book)
+      }
+    });
   }
 
   initBook(book?:Book){
@@ -52,8 +59,8 @@ export class BookFormComponent implements OnActivate{
     });
 
     // this allows us to manipulate the form at runtime
-    this.authorsControlArray = <ControlArray>this.myForm.controls['authors'];
-    this.thumbnailsControlArray = <ControlArray>this.myForm.controls['thumbnails'];
+    this.authorsControlArray = <FormArray>this.myForm.controls['authors'];
+    this.thumbnailsControlArray = <FormArray>this.myForm.controls['thumbnails'];
   }
 
   addAuthorControl(){
