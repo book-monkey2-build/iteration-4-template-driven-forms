@@ -13,13 +13,16 @@ var router_1 = require('@angular/router');
 var router_2 = require('@angular/router');
 var book_store_service_1 = require('../services/books/book-store.service');
 var BookDetailsComponent = (function () {
-    function BookDetailsComponent(bs, router) {
+    function BookDetailsComponent(bs, router, route) {
         this.bs = bs;
         this.router = router;
+        this.route = route;
     }
-    BookDetailsComponent.prototype.routerOnActivate = function (seg) {
-        this.curr = seg;
-        this.book = this.bs.getSingle(this.curr.getParam('isbn'));
+    BookDetailsComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.route.params.subscribe(function (params) {
+            _this.book = _this.bs.getSingle(params['isbn']);
+        });
     };
     BookDetailsComponent.prototype.getRating = function (num) {
         return new Array(num);
@@ -27,7 +30,7 @@ var BookDetailsComponent = (function () {
     BookDetailsComponent.prototype.deleteBook = function () {
         if (confirm("Buch wirklich löschen?")) {
             this.bs.delete(this.book.isbn);
-            this.router.navigate(['../'], this.curr);
+            this.router.navigate(['../']);
         }
     };
     BookDetailsComponent = __decorate([
@@ -38,7 +41,7 @@ var BookDetailsComponent = (function () {
             providers: [book_store_service_1.BookStoreService],
             directives: [router_1.ROUTER_DIRECTIVES]
         }), 
-        __metadata('design:paramtypes', [book_store_service_1.BookStoreService, router_2.Router])
+        __metadata('design:paramtypes', [book_store_service_1.BookStoreService, router_2.Router, router_2.ActivatedRoute])
     ], BookDetailsComponent);
     return BookDetailsComponent;
 }());

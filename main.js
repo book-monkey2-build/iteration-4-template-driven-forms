@@ -5,5 +5,5 @@ var _1 = require('./app/');
 if (_1.environment.production) {
     core_1.enableProdMode();
 }
-platform_browser_dynamic_1.bootstrap(_1.BookMonkeyAppComponent);
+platform_browser_dynamic_1.bootstrap(_1.AppComponent);
 //# sourceMappingURL=main.js.map
