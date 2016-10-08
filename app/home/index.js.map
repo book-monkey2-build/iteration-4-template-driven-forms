@@ -1,1 +1,0 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["../../home/travis/build/Angular2Buch/TMP/BookMonkey/tmp/broccoli_type_script_compiler-input_base_path-8RsoEpPL.tmp/0/src/app/home/index.ts"],"names":[],"mappings":";AAAA,+BAA6B,kBAAkB,CAAC;AAAxC,uDAAwC","sourcesContent":["export {HomeComponent } from './home.component';\n"]}
