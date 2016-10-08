@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 
@@ -10,7 +10,7 @@ import { BookDetailsComponent } from './book-details/book-details.component';
 import { BookFormComponent } from './book-form/book-form.component';
 
 import { BookStoreService } from './shared/book-store.service';
-import { AppRoutingModule } from './app-routing.module.one-app';
+import { AppRoutingModule } from './app-routing.module';
 import { DateValueAccessorModule } from 'angular2-date-value-accessor';
 
 @NgModule({
@@ -23,7 +23,7 @@ import { DateValueAccessorModule } from 'angular2-date-value-accessor';
     BookFormComponent // NEW
   ],
   imports: [
-    CommonModule,
+    BrowserModule,
     FormsModule, // NEW
     AppRoutingModule,
     DateValueAccessorModule
