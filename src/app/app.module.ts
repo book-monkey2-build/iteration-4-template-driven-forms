@@ -26,7 +26,7 @@ import { DateValueAccessorModule } from 'angular2-date-value-accessor';
     BrowserModule,
     FormsModule, // NEW
     AppRoutingModule,
-    DateValueAccessorModule
+    DateValueAccessorModule // NEW
   ],
   providers: [
     BookStoreService
