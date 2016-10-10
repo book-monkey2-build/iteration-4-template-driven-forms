@@ -18438,9 +18438,6 @@ var BookStoreService = (function () {
     BookStoreService.prototype.create = function (book) {
         console.log('creates new book', book);
     };
-    BookStoreService.prototype.update = function (book) {
-        console.log('updates book', book);
-    };
     BookStoreService.prototype.delete = function (isbn) {
         console.log('deletes book with isbn', isbn);
     };
