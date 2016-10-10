@@ -41907,10 +41907,8 @@ var BookDetailsComponent = (function () {
         this.route = route;
     }
     BookDetailsComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this.route.params.subscribe(function (params) {
-            _this.book = _this.bs.getSingle(params['isbn']);
-        });
+        var params = this.route.snapshot.params;
+        this.book = this.bs.getSingle(params['isbn']);
     };
     BookDetailsComponent.prototype.getRating = function (num) {
         return new Array(num);
