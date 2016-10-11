@@ -55589,8 +55589,8 @@ var AppRoutingModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__book_form_book_form_component__ = __webpack_require__(300);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__shared_book_store_service__ = __webpack_require__(121);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_routing_module__ = __webpack_require__(459);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_angular2_date_value_accessor__ = __webpack_require__(457);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_angular2_date_value_accessor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_angular2_date_value_accessor__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_angular_date_value_accessor__ = __webpack_require__(457);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_angular_date_value_accessor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_angular_date_value_accessor__);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -55630,7 +55630,7 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["b" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormsModule"],
                 __WEBPACK_IMPORTED_MODULE_10__app_routing_module__["a" /* AppRoutingModule */],
-                __WEBPACK_IMPORTED_MODULE_11_angular2_date_value_accessor__["DateValueAccessorModule"] // NEW
+                __WEBPACK_IMPORTED_MODULE_11_angular_date_value_accessor__["DateValueAccessorModule"] // NEW
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_9__shared_book_store_service__["a" /* BookStoreService */]
