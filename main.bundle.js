@@ -41963,17 +41963,17 @@ var BookFormComponent = (function () {
     }
     BookFormComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.currentForm.valueChanges.subscribe(function () { return _this.updateErrorMessages(); });
+        this.myForm.valueChanges.subscribe(function () { return _this.updateErrorMessages(); });
     };
     BookFormComponent.prototype.submitForm = function () {
         this.bs.create(this.book);
-        this.currentForm.reset();
+        this.myForm.reset();
     };
     BookFormComponent.prototype.updateErrorMessages = function () {
         this.errors = {};
         for (var _i = 0, BookFormErrorMessages_1 = __WEBPACK_IMPORTED_MODULE_3__book_form_error_messages__["a" /* BookFormErrorMessages */]; _i < BookFormErrorMessages_1.length; _i++) {
             var message = BookFormErrorMessages_1[_i];
-            var control = this.currentForm.form.get(message.forControl);
+            var control = this.myForm.form.get(message.forControl);
             if (control &&
                 control.dirty &&
                 control.invalid &&
@@ -41986,7 +41986,7 @@ var BookFormComponent = (function () {
     __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('myForm'), 
         __metadata('design:type', (typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["NgForm"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["NgForm"]) === 'function' && _a) || Object)
-    ], BookFormComponent.prototype, "currentForm", void 0);
+    ], BookFormComponent.prototype, "myForm", void 0);
     BookFormComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'bm-book-form',
