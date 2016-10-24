@@ -18932,7 +18932,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var BookStoreService = (function () {
     function BookStoreService(http) {
         this.http = http;
-        this.api = 'http://book-monkey2-api.angular2buch.de';
+        this.api = 'https://book-monkey2-api.angular2buch.de';
         this.headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
         this.headers.append('Content-Type', 'application/json');
     }
