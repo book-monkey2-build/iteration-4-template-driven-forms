@@ -33,6 +33,7 @@
     "angular-cli": "1.0.0-beta.19-3",
     "angular-cli-ghpages": "^0.3.0",
     "codelyzer": "1.0.0-beta.1",
+    "diff2html-cli": "^2.0.3",
     "jasmine-core": "2.4.1",
     "jasmine-spec-reporter": "2.5.0",
     "karma": "1.2.0",
