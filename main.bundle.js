@@ -29314,7 +29314,7 @@ var TreeNode = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__thumbnail__ = __webpack_require__(490);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Book; });
-/* unused harmony reexport Thumbnail */
+/* harmony reexport (binding) */ __webpack_require__.d(exports, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__thumbnail__["a"]; });
 
 var Book = (function () {
     function Book(isbn, title, authors, published, subtitle, rating, thumbnails, description) {
@@ -42783,7 +42783,8 @@ var BookFormComponent = (function () {
         this.myForm.valueChanges.subscribe(function () { return _this.updateErrorMessages(); });
     };
     BookFormComponent.prototype.submitForm = function () {
-        this.bs.create(this.myForm.value).subscribe(function (res) { return res; });
+        var book = new __WEBPACK_IMPORTED_MODULE_2__shared_book__["a" /* Book */](this.myForm.value.isbn, this.myForm.value.title, this.myForm.value.authors.split(','), this.myForm.value.published, this.myForm.value.subtitle, null, [new __WEBPACK_IMPORTED_MODULE_2__shared_book__["b" /* Thumbnail */](this.myForm.value.thumbnail.url, this.myForm.value.thumbnail.title)], this.myForm.value.description);
+        this.bs.create(book).subscribe(function (res) { return res; });
         this.myForm.reset();
     };
     BookFormComponent.prototype.updateErrorMessages = function () {
@@ -57504,7 +57505,7 @@ var BookListItemComponent = (function () {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* unused harmony export Thumbnail */
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Thumbnail; });
 var Thumbnail = (function () {
     function Thumbnail(url, title) {
         this.url = url;
@@ -60599,7 +60600,7 @@ module.exports = "<div class=\"ui grid\" *ngIf=\"book\">\n  <div class=\"four wi
 /* 649 */
 /***/ function(module, exports) {
 
-module.exports = "<h1>Buchformular</h1>\n<form novalidate\n       class=\"ui large form\"\n       #myForm=\"ngForm\"\n       (ngSubmit)=\"submitForm()\">\n\n  <div class=\"field\">\n    <label>Buchtitel</label>\n    <input\n      name=\"title\"\n      [(ngModel)]=\"book.title\"\n      required>\n    <div *ngIf=\"errors.title\" class=\"ui negative message\">\n      {{ errors.title }}\n    </div>\n  </div>\n  <div class=\"field\">\n    <label>Untertitel</label>\n    <input\n      name=\"subtitle\"\n      [(ngModel)]=\"book.subtitle\">\n  </div>\n  <div class=\"field\">\n    <label>ISBN-Nummer</label>\n    <input\n      name=\"isbn\"\n      [(ngModel)]=\"book.isbn\"\n      required\n      minlength=\"10\"\n      maxlength=\"13\">\n    <div *ngIf=\"errors.isbn\" class=\"ui negative message\">\n      {{ errors.isbn }}\n    </div>\n  </div>\n  <div class=\"field\">\n    <label>Erscheinungsdatum</label>\n    <input\n      type=\"date\"\n      name=\"published\"\n      [(ngModel)]=\"book.published\"\n      useValueAsDate\n      required>\n    <div *ngIf=\"errors.published\" class=\"ui negative message\">\n      {{ errors.published }}\n    </div>\n  </div>\n  <div class=\"field\">\n    <label>Autor</label>\n    <input\n      name=\"author\"\n      [(ngModel)]=\"book.authors[0]\"\n      required>\n    <div *ngIf=\"errors.authors\" class=\"ui negative message\">\n      {{ errors.authors }}\n    </div>\n  </div>\n  <div class=\"field\">\n    <label>Beschreibung</label>\n    <textarea\n      name=\"description\"\n      [(ngModel)]=\"book.description\"\n      rows=\"3\"></textarea>\n  </div>\n  <div class=\"field\">\n    <label>Bild</label>\n    <div class=\"two fields\" ngModelGroup=\"thumbnail\">\n      <div class=\"field\">\n        <input\n          name=\"url\"\n          [(ngModel)]=\"book.thumbnails[0].url\"\n          placeholder=\"http://beispiel/img.jpg\">\n      </div>\n      <div class=\"field\">\n        <input\n          name=\"title\"\n          [(ngModel)]=\"book.thumbnails[0].title\"\n          placeholder=\"Titel\">\n      </div>\n    </div>\n  </div>\n\n  <button type=\"submit\" class=\"ui button\" [disabled]=\"myForm.invalid\">Speichern</button>\n</form>\n"
+module.exports = "<h1>Buchformular</h1>\n<form novalidate\n       class=\"ui large form\"\n       #myForm=\"ngForm\"\n       (ngSubmit)=\"submitForm()\">\n\n  <div class=\"field\">\n    <label>Buchtitel</label>\n    <input\n      name=\"title\"\n      [(ngModel)]=\"book.title\"\n      required>\n    <div *ngIf=\"errors.title\" class=\"ui negative message\">\n      {{ errors.title }}\n    </div>\n  </div>\n  <div class=\"field\">\n    <label>Untertitel</label>\n    <input\n      name=\"subtitle\"\n      [(ngModel)]=\"book.subtitle\">\n  </div>\n  <div class=\"field\">\n    <label>ISBN-Nummer</label>\n    <input\n      name=\"isbn\"\n      [(ngModel)]=\"book.isbn\"\n      required\n      minlength=\"10\"\n      maxlength=\"13\">\n    <div *ngIf=\"errors.isbn\" class=\"ui negative message\">\n      {{ errors.isbn }}\n    </div>\n  </div>\n  <div class=\"field\">\n    <label>Erscheinungsdatum</label>\n    <input\n      type=\"date\"\n      name=\"published\"\n      [(ngModel)]=\"book.published\"\n      useValueAsDate\n      required>\n    <div *ngIf=\"errors.published\" class=\"ui negative message\">\n      {{ errors.published }}\n    </div>\n  </div>\n  <div class=\"field\">\n    <label>Autor</label>\n    <input\n      name=\"authors\"\n      [(ngModel)]=\"book.authors[0]\"\n      required>\n    <div *ngIf=\"errors.authors\" class=\"ui negative message\">\n      {{ errors.authors }}\n    </div>\n  </div>\n  <div class=\"field\">\n    <label>Beschreibung</label>\n    <textarea\n      name=\"description\"\n      [(ngModel)]=\"book.description\"\n      rows=\"3\"></textarea>\n  </div>\n  <div class=\"field\">\n    <label>Bild</label>\n    <div class=\"two fields\" ngModelGroup=\"thumbnail\">\n      <div class=\"field\">\n        <input\n          name=\"url\"\n          [(ngModel)]=\"book.thumbnails[0].url\"\n          placeholder=\"http://beispiel/img.jpg\">\n      </div>\n      <div class=\"field\">\n        <input\n          name=\"title\"\n          [(ngModel)]=\"book.thumbnails[0].title\"\n          placeholder=\"Titel\">\n      </div>\n    </div>\n  </div>\n\n  <button type=\"submit\" class=\"ui button\" [disabled]=\"myForm.invalid\">Speichern</button>\n</form>\n"
 
 /***/ },
 /* 650 */
