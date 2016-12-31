@@ -34,7 +34,6 @@
     "@types/jasmine": "2.5.38",
     "@types/node": "^6.0.42",
     "angular-cli": "1.0.0-beta.24",
-    "angular-cli-ghpages": "^0.3.3",
     "codelyzer": "~2.0.0-beta.1",
     "diff2html-cli": "^2.0.3",
     "jasmine-core": "2.5.2",
