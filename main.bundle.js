@@ -717,7 +717,7 @@ module.exports = "<img class=\"ui tiny image\"\n     *ngIf=\"book.thumbnails\"\n
 /***/ 677:
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"ui middle aligned selection divided list\">\n  <a class=\"bm-book-list-item item\"\n      *ngFor=\"let b of books\"\n      [book]=\"b\"\n      [routerLink]=\"b.isbn\"></a>\n  <div *ngIf=\"!books\" class=\"ui active dimmer\">\n    <div class=\"ui large text loader\">Daten werden geladen...</div>\n  </div>\n  <p *ngIf=\"books && !books.length\">Es wurden noch keine B&uuml;cher eingetragen.</p>\n</div>\n"
+module.exports = "<div class=\"ui middle aligned selection divided list\">\n  <a class=\"bm-book-list-item item\"\n      *ngFor=\"let b of books\"\n      [book]=\"b\"\n      [routerLink]=\"b.isbn\"></a>\n  <div *ngIf=\"!books\" class=\"ui active dimmer\">\n    <div class=\"ui large text loader\">Daten werden geladen...</div>\n  </div>\n  <p *ngIf=\"books && !books.length\">Es wurden noch keine Bücher eingetragen.</p>\n</div>\n"
 
 /***/ },
 
