@@ -655,7 +655,7 @@ module.exports = "<div class=\"ui middle aligned selection divided list\">\n  <a
 /***/ 531:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"ui search\"  [ngClass]=\"{ loading: isLoading }\">\r\n  <div class=\"ui icon input\">\r\n    <input (keyup)=\"keyup.emit(searchTerm.value)\" #searchTerm class=\"prompt\" type=\"text\" placeholder=\"Search...\">\r\n    <i class=\"search icon\"></i>\r\n  </div>\r\n  <div class=\"results transition\" [ngClass]=\"{ visible: foundBooks.length }\">\r\n\r\n    <a href (click)=\"bookSelected.emit(book); false\" class=\"result\" *ngFor=\"let book of foundBooks\">\r\n      <div class=\"content\">\r\n        <div class=\"title\" >{{ book.title }}</div>\r\n      </div>\r\n    </a>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<div class=\"ui search\"  [ngClass]=\"{ loading: isLoading }\">\r\n  <div class=\"ui icon input\">\r\n    <input (keyup)=\"keyup.emit(searchTerm.value)\" #searchTerm class=\"prompt\" type=\"text\" placeholder=\"Suche...\">\r\n    <i class=\"search icon\"></i>\r\n  </div>\r\n  <div class=\"results transition\" [ngClass]=\"{ visible: foundBooks.length }\">\r\n\r\n    <a href (click)=\"bookSelected.emit(book); false\" class=\"result\" *ngFor=\"let book of foundBooks\">\r\n      <div class=\"content\">\r\n        <div class=\"title\" >{{ book.title }}</div>\r\n      </div>\r\n    </a>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
